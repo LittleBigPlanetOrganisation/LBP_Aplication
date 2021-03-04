@@ -1,8 +1,9 @@
 import React from 'react'
 import { Button } from '../../Button';
-import { Typography } from '@material-ui/core'
+import { Box, Typography } from '@material-ui/core'
 import Logo from './Logo'
 import Clouds from './Clouds'
+import { HeaderButton } from './HeaderButton'
 
 export default function Accueil() {
     return (
@@ -12,6 +13,9 @@ export default function Accueil() {
             <Typography variant="h2">
                 'Partagez vos univers avec l'univers'
             </Typography>
+            <Box component="span" m={1}>
+            <HeaderButton />
+            </Box>
         </section>
     );
 }
