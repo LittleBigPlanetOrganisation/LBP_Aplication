@@ -1,2 +1,2 @@
-# LBP_Aplication
+# LBP_Application
 React JS
