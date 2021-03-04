@@ -1,0 +1,48 @@
+:root {
+  --greenPrimary: #002626;
+  --greenSecondary: #0e4749;
+  --limonGreen: #95c623;
+  --orange: #e55812;
+  --beige: #efe7da;
+}
+
+.dropdown-menu {
+  background: rgb(246, 244, 244);
+  width: 200px;
+  position: absolute;
+  top: 70px;
+  list-style: none;
+  text-align: start;
+}
+
+.dropdown-menu li {
+  background: var(--beige);
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background: var(--orange);
+}
+
+.dropdown-menu.clicked {
+  display: none;
+}
+
+.dropdown-link:hover {
+  color: #efe7da;
+}
+.dropdown-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px 10px;
+  color: #002626;
+  padding: 16px;
+}
+
+@media screen and (max-width: 960px) {
+  .fa-caret-down {
+    display: none;
+  }
+}
