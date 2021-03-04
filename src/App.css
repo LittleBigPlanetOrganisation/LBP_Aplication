@@ -88,18 +88,32 @@
     margin-top: 2.5rem;
   }
 }
+@media screen and (max-width: 450px) {
+  .accueil h2 {
+    font-size: 35px;
+    margin-top: 5rem;
+    text-align: center;
+  }
+}
 
 .logo {
   width: 150px;
   display: block;
-  margin-top: -200px;
-  position: relative;
+  margin-top: -100px;
+  position: absolute;
   z-index: 2;
 }
 
 @media screen and (max-width: 600px) {
   .logo {
     width: 120px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .logo {
+    width: 120px;
+    align-items: center;
   }
 }
 
