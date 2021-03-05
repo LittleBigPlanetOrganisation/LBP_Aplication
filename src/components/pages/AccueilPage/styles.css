@@ -1,0 +1,69 @@
+.accueil {
+  background: radial-gradient(at center center, #502d1f41 0%, #3522082c 100%),
+    url("../../../images/canyon_banniere.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -80px;
+  z-index: -1;
+}
+
+.clouds {
+  background: url("../../../images/cloud_1.png");
+  margin-top: -165px;
+  height: 85%;
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+  overflow: hidden;
+  animation: clouds_animation 205s linear infinite;
+}
+@keyframes clouds_animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2122px 0;
+  }
+}
+
+.accueil h2 {
+  color: white;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  display: block;
+  position: absolute;
+  margin-top: 1.5rem;
+  padding: 20px 20px 40px 40px;
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .accueil h2 {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .accueil h2 {
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .accueil h2 {
+    font-size: 35px;
+    margin-top: 5rem;
+    text-align: center;
+  }
+}

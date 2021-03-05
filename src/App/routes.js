@@ -1,34 +1,30 @@
-import Accueil from "../components/pages/Accueil";
-import Concept from "../components/pages/Concept";
-import Connexion from "../components/pages/Connexion";
-import Destinations from "../components/pages/Destinations";
-import Imprimer from "../components/pages/Imprimer";
-import Inspirations from "../components/pages/Inspirations";
+import AccueilPage from "../components/pages/AccueilPage";
+import EmptyPage from "../EmptyPage";
 
 const routes = [
   {
     path: "/",
-    component: Accueil,
+    component: AccueilPage,
   },
   {
     path: "/inspirations",
-    component: Inspirations,
+    component: () => <EmptyPage title="Inspirations" />,
   },
   {
     path: "/destinations",
-    component: Destinations,
+    component: () => <EmptyPage title="Destinations" />,
   },
   {
     path: "/imprimer",
-    component: Imprimer,
+    component: () => <EmptyPage title="Imprimer" />,
   },
   {
     path: "/concept",
-    component: Concept,
+    component: () => <EmptyPage title="Concept" />,
   },
   {
     path: "/connexion",
-    component: Connexion,
+    component: () => <EmptyPage title="Connexion" />,
   },
 ];
 
