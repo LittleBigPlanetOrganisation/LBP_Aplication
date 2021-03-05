@@ -28,7 +28,7 @@
 
 .accueil {
   background: radial-gradient(at center center, #502d1f41 0%, #3522082c 100%),
-    url("./images/canyon_banniere.jpg");
+    url("../images/canyon_banniere.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,7 +37,7 @@
 }
 
 .clouds {
-  background: url("./images/cloud_1.png");
+  background: url("../images/cloud_1.png");
   margin-top: -165px;
   height: 85%;
   width: 100%;
