@@ -1,34 +1,6 @@
-:root {
-  --greenPrimary: #002626;
-  --greenSecondary: #0e4749;
-  --limonGreen: #95c623;
-  --orange: #e55812;
-  --beige: #efe7da;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Raleway", sans-serif;
-}
-
-.destinations,
-.inspirations,
-.imprimer,
-.concept,
-.connexion,
-.accueil {
-  display: flex;
-  height: 60vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-}
-
 .accueil {
   background: radial-gradient(at center center, #502d1f41 0%, #3522082c 100%),
-    url("./images/canyon_banniere.jpg");
+    url("../../../images/canyon_banniere.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,7 +9,7 @@
 }
 
 .clouds {
-  background: url("./images/cloud_1.png");
+  background: url("../../../images/cloud_1.png");
   margin-top: -165px;
   height: 85%;
   width: 100%;
@@ -93,47 +65,5 @@
     font-size: 35px;
     margin-top: 5rem;
     text-align: center;
-  }
-}
-
-.logo {
-  width: 150px;
-  display: block;
-  margin-top: -100px;
-  position: absolute;
-  z-index: 2;
-}
-
-@media screen and (max-width: 600px) {
-  .logo {
-    width: 120px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .logo {
-    width: 120px;
-    align-items: center;
-  }
-}
-
-.fav {
-  width: 40px;
-  margin-top: 0.4rem;
-  margin-left: -3rem;
-}
-
-.fav:hover {
-  transform: scale(1.1);
-  transition: ease-in;
-}
-
-@media screen and (max-width: 960px) {
-  .fav,
-  fav:hover {
-    width: 40px;
-    position: fixed;
-    margin-top: 1.15rem;
-    margin-left: 2rem;
   }
 }
