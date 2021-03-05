@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { Button } from './Button';
-import { Link } from 'react-router-dom';
-import './Navbar.css';
-import Dropdown from './Dropdown';
-import Favicon from './Favicon';
+import React, { useState } from "react";
+import { Button } from "./Button";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
+import Dropdown from "./Dropdown";
+import Favicon from "./Favicon";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -30,56 +30,55 @@ function Navbar() {
 
   return (
     <>
-      <nav className='navbar'>
-        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-
-         <Favicon />
+      <nav className="navbar">
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <Favicon />
         </Link>
-        <div className='menu-icon' onClick={handleClick}>
-          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+        <div className="menu-icon" onClick={handleClick}>
+          <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li className='nav-item'>
-            <Link to='/destinations' className='nav-links' onClick={closeMobileMenu}>
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-item">
+            <Link
+              to="/destinations"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
               Destination
             </Link>
           </li>
           <li
-            className='nav-item'
+            className="nav-item"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to='/inspirations'
-              className='nav-links'
+              to="/inspirations"
+              className="nav-links"
               onClick={closeMobileMenu}
             >
-              Inspirations <i className='fas fa-caret-down' />
+              Inspirations <i className="fas fa-caret-down" />
             </Link>
             {dropdown && <Dropdown />}
           </li>
-          <li className='nav-item'>
+          <li className="nav-item">
             <Link
-              to='/imprimer'
-              className='nav-links'
+              to="/imprimer"
+              className="nav-links"
               onClick={closeMobileMenu}
             >
               Imprimer
             </Link>
           </li>
-          <li className='nav-item'>
-            <Link
-              to='/concept'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
+          <li className="nav-item">
+            <Link to="/concept" className="nav-links" onClick={closeMobileMenu}>
               Le Concept
             </Link>
           </li>
           <li>
             <Link
-              to='/connexion'
-              className='nav-links-mobile'
+              to="/connexion"
+              className="nav-links-mobile"
               onClick={closeMobileMenu}
             >
               Connexion
