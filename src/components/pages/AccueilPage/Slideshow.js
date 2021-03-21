@@ -1,38 +1,43 @@
-import React from "react";
-import { Slide } from "react-slideshow-image";
-import iconConserver from "../../../images/iconConserver.jpg";
-import iconPartager from "../../../images/iconPartager.jpg";
-import iconImprimer from "../../../images/iconImprimer.jpg";
+import React, { useState } from "react";
+import { images } from "./CarouselData";
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+
 import "./Slide.css";
 
-const properties = {
-  duration: 5000,
-  transitionDuration: 500,
-  infinite: true,
-  indicators: true,
-  arrows: true,
-};
-
 export default function Slideshow() {
+  const [currImg, setCurrImg] = useState(0);
   return (
-    <div className="containerSlide">
-      <Slide {...properties}>
-        <div className="eachslide">
-          <div>
-            <img scr={iconConserver} alt="iconConserver" />
-          </div>
+    <div className="carousel">
+      <div
+        className="carouselInner"
+        style={{ backgroundImage: `url(${images[currImg].img})` }}
+      >
+        <div
+          className="left"
+          onClick={() => {
+            currImg > 0 && setCurrImg(currImg - 1);
+          }}
+        >
+          <ArrowBackIosIcon
+            style={{ fontsize: 30, marginLeft: 5, marginRight: 5 }}
+          />
         </div>
-        <div className="eachslide">
-          <div>
-            <img scr={iconPartager} alt="iconPartager" />
-          </div>
+        <div className="center">
+          <h1>{images[currImg].title}</h1>
+          <p>{images[currImg].subtitle}</p>
         </div>
-        <div className="eachslide">
-          <div>
-            <img scr={iconImprimer} alt="iconImprimer" />
-          </div>
+        <div
+          className="right"
+          onClick={() => {
+            currImg < images.length - 1 && setCurrImg(currImg + 1);
+          }}
+        >
+          <ArrowForwardIosIcon
+            style={{ fontsize: 30, marginLeft: 5, marginRight: 5 }}
+          />
         </div>
-      </Slide>
+      </div>
     </div>
   );
 }
