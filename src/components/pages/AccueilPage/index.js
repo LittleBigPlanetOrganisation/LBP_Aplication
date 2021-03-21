@@ -45,9 +45,6 @@ export default function Accueil() {
       <section className="description">
         <Typography variant="h5">'Découvrir et s'inspirer'</Typography>
       </section>
-      <div>
-        <Slideshow />
-      </div>
     </Page>
   );
 }
