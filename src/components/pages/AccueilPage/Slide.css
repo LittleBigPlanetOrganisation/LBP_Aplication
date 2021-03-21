@@ -1,0 +1,9 @@
+.containerSlide {
+  width: 300px;
+  margin: auto;
+  padding-top: 200px;
+}
+
+.containerSlide img {
+  height: 200px;
+}

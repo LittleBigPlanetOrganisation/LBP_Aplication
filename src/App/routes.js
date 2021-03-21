@@ -26,6 +26,10 @@ const routes = [
     path: "/connexion",
     component: () => <EmptyPage title="Connexion" />,
   },
+  {
+    path: "/ensavoirplus",
+    component: () => <EmptyPage title="En savoir plus" />,
+  },
 ];
 
 export default routes;

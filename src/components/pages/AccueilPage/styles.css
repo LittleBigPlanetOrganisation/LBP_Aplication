@@ -10,7 +10,7 @@
 
 .clouds {
   background: url("../../../images/cloud_1.png");
-  margin-top: -165px;
+  margin-top: -75px;
   height: 85%;
   width: 100%;
   z-index: 0;
@@ -35,16 +35,19 @@
   display: block;
   position: absolute;
   margin-top: 1.5rem;
-  padding: 20px 20px 40px 40px;
+  padding: 20px 40px 40px 20px;
 }
-
-@keyframes animate {
-  0% {
-    background-position: -500%;
-  }
-  100% {
-    background-position: 500%;
-  }
+.description h5 {
+  color: #0e4749;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 20px 40px 40px 20px;
+}
+.description p {
+  font-family: "Roboto", sans-serif;
 }
 
 @media screen and (max-width: 960px) {
@@ -67,3 +70,18 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 960) {
+  .gridList {
+    columns: 3;
+    column-count: 3;
+  }
+}
+.carnet.iconButton {
+  color: antiquewhite;
+}
+
+/* .titreGrid {
+  color: #0e4749;
+  font-size: 1rem;
+} */

@@ -23,7 +23,7 @@
 }
 
 .headerButton:hover {
-  padding: 9px 25px;
+  padding: 8px 24px;
   transition: all 0.2s ease-out;
   background-color: #fff;
   border-radius: 15px;
@@ -42,6 +42,66 @@
     margin-right: 10px;
     font-size: 12px;
     padding: 7px 7px;
+    margin-top: 350px;
+  }
+}
+
+.bodyButton {
+  padding: 4px 25px;
+  border-radius: 10px;
+  border: 1px solid var(--orange);
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  background-color: var(--orange);
+  display: inline-block;
+  margin-top: 20px;
+  position: relative;
+  float: right;
+  margin-right: 15px;
+  margin-bottom: 2rem;
+}
+
+.bodyButton:hover {
+  padding: 3px 24px;
+  transition: all 0.2s ease-out;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid var(--orange);
+  color: var(--orange);
+}
+.cardButton {
+  padding: 4px 8px;
+  border-radius: 10px;
+  border: 1px solid var(--orange);
+  border: none;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+  background-color: var(--orange);
+  display: inline-block;
+  margin-top: 20px;
+  position: relative;
+  float: right;
+  margin-right: 10px;
+}
+.cardButton:hover {
+  padding: 3px 7px;
+  transition: all 0.2s ease-out;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid var(--orange);
+  color: var(--orange);
+}
+@media screen and (max-width: 450px) {
+  .headerButton {
+    /*margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+    padding: 7px 7px;*/
     margin-top: 350px;
   }
 }

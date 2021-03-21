@@ -2,9 +2,14 @@ import React from "react";
 import { Box, Typography } from "@material-ui/core";
 
 import Logo from "../../../Logo";
-import { HeaderButton } from "./HeaderButton";
+import { HeaderButton, BodyCardButton } from "./HeaderButton";
+import { BodyButton } from "./HeaderButton";
+import { DescriptionServices } from "./DescriptionServices";
+import { TitlebarGridList } from "./TitlebarGridList";
+import { ExperienceClient } from "./ExperienceClient";
 import "./styles.css";
 import Page from "../../../Page";
+import Slideshow from "./Slideshow";
 
 export default function Accueil() {
   return (
@@ -19,6 +24,30 @@ export default function Accueil() {
           <HeaderButton />
         </Box>
       </section>
+      <section className="description">
+        <Typography variant="h5">
+          'Organisez, partagez et imprimez vos voyages en toute simplicité'
+        </Typography>
+        <DescriptionServices />
+        <BodyButton />
+      </section>
+      <section className="description">
+        <Typography variant="h5">'Découvrir et s'inspirer'</Typography>
+      </section>
+      <section className="carnet">
+        <TitlebarGridList />
+      </section>
+      <BodyCardButton />
+      <section className="description">
+        <Typography variant="h5">'Découvrir et partager'</Typography>
+        <ExperienceClient />
+      </section>
+      <section className="description">
+        <Typography variant="h5">'Découvrir et s'inspirer'</Typography>
+      </section>
+      <div>
+        <Slideshow />
+      </div>
     </Page>
   );
 }
