@@ -20,13 +20,13 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     color: "#e55812",
     margin: "auto",
-    marginBottom: "1rem",
+    marginBottom: "2rem",
     boxShadow: "none",
   },
   img: {
     margin: "auto",
     display: "block",
-    maxWidth: "90px",
+    maxWidth: "60px",
     float: "left",
   },
   head: {
@@ -40,13 +40,14 @@ const useStyles = makeStyles((theme) => ({
     display: "block",
     width: "60px",
     fontWeight: "normal",
+    color: "#e55812",
   },
   paragraph: {
     fontSize: "1rem",
     color: "#002626",
     fontFamily: "",
     width: "100%",
-    marginTop: "8rem",
+    marginTop: "6rem",
   },
 }));
 

@@ -7,9 +7,9 @@ import { BodyButton } from "./HeaderButton";
 import { DescriptionServices } from "./DescriptionServices";
 import { TitlebarGridList } from "./TitlebarGridList";
 import { ExperienceClient } from "./ExperienceClient";
+import { PreparerSonVoyage } from "./PreparerSonVoyage";
 import "./styles.css";
 import Page from "../../../Page";
-import Slideshow from "./Slideshow";
 
 export default function Accueil() {
   return (
@@ -42,8 +42,11 @@ export default function Accueil() {
         <Typography variant="h5">'Découvrir et partager'</Typography>
         <ExperienceClient />
       </section>
-      <section className="description">
-        <Typography variant="h5">'Découvrir et s'inspirer'</Typography>
+      <section className="descript">
+        <Typography variant="h5">
+          'Préparer son voyage et gérer son budget'
+        </Typography>
+        <PreparerSonVoyage />
       </section>
     </Page>
   );

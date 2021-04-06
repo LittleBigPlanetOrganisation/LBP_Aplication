@@ -34,6 +34,7 @@ const useStyles = makeStyles((theme) => ({
   titre: {
     marginBottom: "1rem",
     marginTop: "1rem",
+    color: "#e55812",
   },
   paragraph: {
     fontSize: "0.9rem",
