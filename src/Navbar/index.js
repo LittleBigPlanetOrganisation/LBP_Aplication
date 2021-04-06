@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "../components/Button";
+import { Button, ButtonInscription } from "../components/Button";
 import { Link } from "react-router-dom";
 
 import "./styles.css";
@@ -82,6 +82,7 @@ export default function Navbar() {
         </li>
       </ul>
       <Button />
+      <ButtonInscription />
     </nav>
   );
 }

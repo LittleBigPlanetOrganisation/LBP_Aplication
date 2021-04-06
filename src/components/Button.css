@@ -12,10 +12,11 @@
   border: 1px solid var(--orange);
   outline: none;
   border: none;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
   cursor: pointer;
   background-color: var(--orange);
+  margin-right: 20px;
 }
 
 .btn:hover {

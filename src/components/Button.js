@@ -9,3 +9,11 @@ export function Button() {
     </Link>
   );
 }
+
+export function ButtonInscription() {
+  return (
+    <Link to="inscription">
+      <button className="btn">Inscription</button>
+    </Link>
+  );
+}
