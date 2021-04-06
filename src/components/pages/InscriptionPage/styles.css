@@ -1,0 +1,9 @@
+.titre h5 {
+  color: #0e4749;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 20px 40px 40px 20px;
+}

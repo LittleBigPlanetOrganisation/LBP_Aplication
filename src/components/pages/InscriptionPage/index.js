@@ -1,14 +1,15 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
+import "./styles.css";
 
 import Page from "../../../Page";
 
 export default function InscriptionPage() {
   return (
     <Page>
-      <section className="des">
+      <section className="titre">
         <Typography variant="h5">
-          'Organisez, partagez et imprimez vos voyages en toute simplicité'
+          'Rejoignez la communauté de LittleBigVoyageurs'
         </Typography>
       </section>
     </Page>
