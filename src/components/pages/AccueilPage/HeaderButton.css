@@ -71,6 +71,30 @@
   border: 1px solid var(--orange);
   color: var(--orange);
 }
+.ToDoListButton {
+  padding: 4px 25px;
+  border-radius: 10px;
+  border: 1px solid var(--orange);
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  background-color: var(--orange);
+  display: inline-block;
+  margin-top: 40px;
+  position: relative;
+  float: right;
+  margin-right: 15px;
+}
+
+.ToDoListButton:hover {
+  padding: 3px 24px;
+  transition: all 0.2s ease-out;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid var(--orange);
+  color: var(--orange);
+}
 .cardButton {
   padding: 4px 8px;
   border-radius: 10px;
