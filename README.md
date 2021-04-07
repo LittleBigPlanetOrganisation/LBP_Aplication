@@ -64,3 +64,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 To improve my workflow, I decide to implement some data as fixed fixtures using [json-server](https://github.com/typicode/json-server).
 
 Available resources: [db.json](db.json)
+
+## Environment Variables
+
+```
+REACT_APP_BASE_URI=...
+```
