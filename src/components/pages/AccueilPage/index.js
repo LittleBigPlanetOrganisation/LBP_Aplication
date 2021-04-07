@@ -10,6 +10,7 @@ import { ExperienceClient } from "./ExperienceClient";
 import { PreparerSonVoyage } from "./PreparerSonVoyage";
 import "./styles.css";
 import Page from "../../../Page";
+import PostList from "../../../PostList";
 
 export default function Accueil() {
   return (
@@ -35,6 +36,9 @@ export default function Accueil() {
         <Typography variant="h5">'Découvrir et s'inspirer'</Typography>
       </section>
       <section className="carnet">
+        <section className="carnet">
+          <PostList />
+        </section>
         <TitlebarGridList />
       </section>
       <BodyCardButton />
