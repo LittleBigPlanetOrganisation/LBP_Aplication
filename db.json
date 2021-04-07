@@ -1,0 +1,9 @@
+{
+  "posts": [
+    { "id": 1, "title": "Voyage 1", "username": "Krystel" },
+    { "id": 2, "title": "Voyage 2", "username": "Krystel" },
+    { "id": 3, "title": "Voyage 3", "username": "Krystel" },
+    { "id": 4, "title": "Voyage 4", "username": "Krystel" },
+    { "id": 5, "title": "Voyage 5", "username": "Krystel" }
+  ]
+}
