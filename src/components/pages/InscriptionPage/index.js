@@ -3,9 +3,11 @@ import "./styles.css";
 
 import Page from "../../../Page";
 import useSubscribeForm from "../../../useSubscribeForm";
+import useSubmitForm from "../../../useSubmitForm";
 
 export default function InscriptionPage() {
-  const [username, password, { setUsername, setPassword }] = useSubscribeForm();
+  const [surName, password, { setUsername, setPassword }] = useSubscribeForm();
+  const [submitForm] = useSubmitForm();
 
   return (
     <Page>
@@ -15,9 +17,9 @@ export default function InscriptionPage() {
         </Typography>
         <form noValidate autoComplete="off">
           <TextField
-            id="Username"
-            label="Username"
-            value={username}
+            id="surName"
+            label="surName"
+            value={surName}
             onChange={setUsername}
           />
           <TextField
@@ -30,7 +32,7 @@ export default function InscriptionPage() {
           <Button
             variant="contained"
             color="primary"
-            onClick={() => console.log({ username, password })}
+            onClick={submitForm(surName, password)}
           >
             S'inscrire
           </Button>
